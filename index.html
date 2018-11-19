@@ -1,1 +1,202 @@
-echo "Hello World" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+function myFunction() {
+    alert("Hola! Soy una alerta!");
+}
+function myConfirm() {
+    confirm("Hola! Soy una confirmacion!");
+}
+ $(document).ready(function() {
+  setTimeout(function() {
+    $("#proceed").show();
+  }, 5000);
+}); 
+</script>
+<title>Pagina de Pruebas</title>
+<link href="twoColLiqLt.css" rel="stylesheet" type="text/css" /><!--[if lte IE 7]>
+<style>
+.content { margin-right: -1px; } /* this 1px negative margin can be placed on any of the columns in this layout with the same corrective effect. */
+ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it needs to correct extra whiltespace between the links */
+</style>
+<![endif]-->
+<style type="text/css">
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="nuevaPagina.html" target="_self">Pagina 2</a><a href="#"></a></li>
+      <li><a href="#">Link two</a></li>
+      <li><a href="#">Link three</a></li>
+      <li><a href="#">Link four</a></li>
+    </ul>
+    <!-- end .sidebar1 --></div>
+  <div class="content">
+    <h1>Página  de pruebas</h1>
+    <p>Sitio de Pruebas</a>.</p>
+    <h3>TextBox</h3>
+  
+    <form id="form1" name="form1" method="post" action="">
+
+    </form>
+
+</p>
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="nuevaPagina.html">Link 1</a>
+    <a href="#top">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+<p>Espera</p>
+<button type="button" id="proceed"  onclick="window.open('http://www.goodstartbooks.com/pruebas/nuevaPagina.html', '_blank')">Continua</button>
+<h1>Pruebas locales</h1>
+<table width="200" border="1" id="primera" name="tabla_prueba">
+  <tr id="importante" class="rojo">
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr >
+  <tr id="noImportante">
+    <td>Rojo</td>
+    <td>Azul</td>
+    <td>Naranja</td>
+  </tr>
+  <tr name="ultimo">
+    <td>Pera</td>
+    <td>Uva</td>
+    <td>Manzana</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>Grupo de Checkboxes</p>
+    <form id="form2" name="form2" method="post" action="">
+      <table width="200">
+        <tr>
+          <td><label>
+            <input type="checkbox" name="CheckboxGroup1" value="1" id="CheckboxGroup1_0" />
+            Uno</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="CheckboxGroup1" value="2" id="CheckboxGroup1_1" />
+            Dos</label></td>
+        </tr>
+      </table>
+    </form>
+
+    <form name="form" id="form">
+    </form>
+    <p>&nbsp;</p>
+    <p>
+      <input type="radio" name="radio" id="firstUnder" value="firstUnder" />
+      <label for="firstUnder">Accepta</label>
+    </p>
+    <p>
+      <label>
+        <input type="radio" name="RadioGroup1" value="50" id="RadioGroup1_0" />
+  > 50</label>
+      <br />
+      <label>
+        <input type="radio" name="RadioGroup1" value="100" id="RadioGroup1_1" />
+  > 100</label>
+    </p>
+    <p>&nbsp;</p>
+    <div class="container" id="All">Submit 
+      <input name="Buton1" type="submit" id="Buton1" onclick="window.open('http://www.goodstartbooks.com/pruebas/nuevaPagina.html', '_blank')" value="Submit" />
+      <select name="ingrediente" id="ingrediente">
+        <option value="maiz">Maiz</option>
+        <option value="cebolla">Cebolla</option>
+        <option value="cilantro">Cilantro</option>
+        <option value="perejil">Perejil</option>
+      </select>
+      <input name="button" type="submit" id="confirma" onclick="myConfirm()" value="Confirma" />
+<div class="container" id="left">
+        <select name="Select1" size="2" multiple="multiple">
+          <option value="manzana">Manzana</option>
+          <option value="platano">Platano</option>
+          <option value="sandia">Sandia</option>
+          <option value="naranja">Naranja</option>
+        </select>
+        <div class="content" id="center">Alert
+
+<button onclick="myFunction()">Alert</button>
+<style>
+#proceed {
+  display: none;
+}
+.rojo
+{
+	color: #F00;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+
+        </div>
+       
+        <label for="Frutas">Frutas</label>
+</div>
+    </div>
+    <p>&nbsp;</p>
+    <p>		<iframe id="pruebas-iframe" src="nuevaPagina.html" name="iframe-name" style="width: 100%; height: 600px" scrolling="yes" marginwidth="0" marginheight="0" vspace="0" hspace="0" frameborder="0">
+		</iframe><br />
+    </p>
+   
+  <!-- end .content --></div>
+  <!-- end .container --></div>
+</body>
+
+</html>
