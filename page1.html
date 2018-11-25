@@ -1,0 +1,268 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AppSoftware</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="vendors/jqvmap/dist/jqvmap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="">Veterinaria</a>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <h3 class="menu-title">Mascota</h3><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a id="Registrar_mascota" href="page1.html"> <i class="menu-icon fa fa-dashboard"></i>Registrar Mascota </a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a id="Listado_mascota" href="page2.html"> <i class="menu-icon fa fa-dashboard"></i>Listado Mascota </a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">
+
+            <div class="header-menu">
+
+                <div class="col-sm-12">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                    <table width="99%"><tr><td width="85%"></td><td>
+                        <a id="logout" href="index.html"><i class="fa fa-power-off"></i> Logout</a>
+                    </td></tr></table>
+
+                </div>
+            </div>
+        </header><!-- /header -->
+        <!-- Header-->
+
+
+        <div class="content mt-3">
+<section id="main-content">
+    <section class="wrapper">
+        <h3>
+            <i class="fa fa-angle-right">
+            </i>
+            Mascota
+        </h3>
+        <div class="row mt">
+            <div class="col-lg-12">
+                <div class="content-panel">
+                    <section class="panel" id="no-more-tables">
+                        <table width="100%">
+                            <tr>
+                                <td width="15%">
+                                </td>
+                                <td width="33%">
+                                    <div class="form-group">
+                                        <br>
+                                            <label class="col-sm-4 col-sm-4 control-label">
+                                                PROPIETARIO:
+                                            </label>
+                                            <div class="col-sm-12">
+                                                <div class="col-sm-12">
+                                                <input class="form-control" id="propietario" name="propietario" type="text">
+                                                </input>
+                                            </div>
+                                            </div>
+                                        </br>
+                                    </div>
+                                </td>
+                                <td width="33%">
+                                    <div class="form-group">
+                                        <br>
+                                            <label class="col-sm-4 col-sm-4 control-label">
+                                                FECHA:
+                                            </label>
+                                            <div class="col-sm-12">
+                                                <input class="form-control" data-format="yyyy-MM-dd" id="fecha" name="fecha" type="date">
+                                                </input>
+                                            </div>
+                                        </br>
+                                    </div>
+                                </td>
+                                <td width="8%">
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%">
+                            <tr>
+                                <td>
+                                </td>
+                                <td width="33%">
+                                    <div class="form-group">
+                                        <br>
+                                            <label class="col-sm-6 col-sm-6 control-label">
+                                                NOMBRE DE LA MASCOTA:
+                                            </label>
+                                            <div class="col-sm-12">
+                                                <input class="form-control" name="nombre" id="nombre" type="text">
+                                                </input>
+                                            </div>
+                                        </br>
+                                    </div>
+                                </td>
+                                <td width="33%">
+                                    <div class="form-group">
+                                        <br>
+                                            <label class="col-sm-4 col-sm-4 control-label">
+                                                ESPECIE:
+                                            </label>
+                                            <div class="col-sm-12">
+                                                <input class="form-control" name="especie" id="especie" type="text">
+                                                </input>
+                                            </div>
+                                        </br>
+                                    </div>
+                                </td>
+                                <td rowspan="2" width="33%">
+                                    <div class="form-group">
+                                        <br>
+                                            <label class="col-sm-4 col-sm-4 control-label">
+                                                DESCRIPCION:
+                                            </label>
+                                            <div class="col-sm-12">
+                                                <textarea class="form-control" cols="40" id="descripcion" name="descripcion" rows="5">
+                                                </textarea>
+                                            </div>
+                                        </br>
+                                    </div>
+                                </td>
+                                <td width="8%">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td width="33%">
+                                    <div class="form-group">
+                                        <br>
+                                            <label class="col-sm-4 col-sm-4 control-label">
+                                                RAZA:
+                                            </label>
+                                            <div class="col-sm-12">
+                                                <input class="form-control" name="raza" id="raza" type="text">
+                                                </input>
+                                            </div>
+                                        </br>
+                                    </div>
+                                </td>
+                                <td width="33%">
+                                    <div class="form-group">
+                                        <br>
+                                            <label class="col-sm-4 col-sm-4 control-label">
+                                                SEXO:
+                                            </label>
+                                            <div class="col-sm-12">
+                                                <input class="form-control" name="sexo" id="sexo" type="text">
+                                                </input>
+                                            </div>
+                                        </br>
+                                    </div>
+                                </td>
+                                <td width="8%">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td colspan="3">
+                                    <center>
+                                        <div class="form-group">
+                                            <br>
+                                                <div class="col-sm-12">
+                                                    <a class="btn btn-primary" href="page2.html" id="guardar_m" type="reset" onclick="myFunction()">
+                                                        Guardar
+                                                    </a>
+                                                    <script>
+                                                    function myFunction() {
+                                                        alert("Mascota registrada correctamente");
+                                                    }
+                                                    </script>
+                                                    <a class="btn btn-danger" href="" type="reset" id="cancelar_m">
+                                                        Cancelar
+                                                    </a>
+                                                </div>
+                                            </br>
+                                        </div>
+                                    </center>
+                                </td>
+                                <td width="33%">
+                                </td>
+                                <td width="8%">
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+        </div> <!-- .content -->
+    </div><!-- /#right-panel -->
+
+    <!-- Right Panel -->
+
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+    <script src="vendors/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/widgets.js"></script>
+    <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
+    <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script>
+        (function($) {
+            "use strict";
+
+            jQuery('#vmap').vectorMap({
+                map: 'world_en',
+                backgroundColor: null,
+                color: '#ffffff',
+                hoverOpacity: 0.7,
+                selectedColor: '#1de9b6',
+                enableZoom: true,
+                showTooltip: true,
+                values: sample_data,
+                scaleColors: ['#1de9b6', '#03a9f5'],
+                normalizeFunction: 'polynomial'
+            });
+        })(jQuery);
+    </script>
+
+</body>
+
+</html>
